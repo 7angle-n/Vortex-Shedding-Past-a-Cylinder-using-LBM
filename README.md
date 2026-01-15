@@ -33,22 +33,6 @@ The simulation uses the **D2Q9 lattice** with a **BGK (single-relaxation-time) c
 - **Visualization:**
   - Vorticity (curl of velocity field)
 
----
-
-## 🧩 Governing Idea
-
-Instead of directly solving the Navier–Stokes equations, LBM evolves particle distribution functions on a lattice:
-
-\[
-f_i(\mathbf{x} + \mathbf{c}_i, t + 1) =
-f_i(\mathbf{x}, t) - \frac{1}{\tau}
-\left( f_i - f_i^{eq} \right)
-\]
-
-Macroscopic flow behavior (velocity, pressure, vorticity) emerges naturally from these microscopic dynamics.
-
----
-
 ## 🛠️ Requirements
 
 - Python 3.x
